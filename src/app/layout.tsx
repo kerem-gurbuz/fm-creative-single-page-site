@@ -1,6 +1,7 @@
-import "@/lib/styles/globals.css";
+import { commissioner } from '@/lib/styles/fonts';
+import '@/lib/styles/globals.css';
 
-export { metadata } from "@/config/seo/metadata";
+export { metadata } from '@/config/seo/metadata';
 
 export default function RootLayout({
   children,
@@ -9,7 +10,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`antialiased`}>{children}</body>
+      <body
+        className={`${commissioner.variable} font-commissioner antialiased`}
+      >
+        {children}
+      </body>
     </html>
   );
 }
