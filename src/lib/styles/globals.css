@@ -6,6 +6,17 @@
 /*                                   Colors                                   */
 /* -------------------------------------------------------------------------- */
 
+/* Design System Colors */
+@layer base {
+  :root {
+    /* primary */
+    --color-coral-red: 0deg 93% 64%;
+    /* secondary */
+    --color-obsidian: 240deg 14% 11%;
+  }
+}
+
+/* Shadcn-UI Colors */
 @layer base {
   :root {
     --background: 0 0% 100%;
@@ -67,7 +78,7 @@
     @apply border-border;
   }
   body {
-    @apply bg-background text-foreground;
+    @apply bg-white text-black;
   }
 }
 

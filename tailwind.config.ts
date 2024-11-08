@@ -25,6 +25,11 @@ export default {
         ],
       },
       colors: {
+        // design system colors
+        'coral-red': 'hsl(var(--color-coral-red))',
+        obsidian: 'hsl(var(--color-obsidian))',
+
+        // shadcn-ui colors
         background: 'hsl(var(--background))',
         foreground: 'hsl(var(--foreground))',
         card: {
