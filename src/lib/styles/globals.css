@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+/* -------------------------------------------------------------------------- */
+/*                                   Colors                                   */
+/* -------------------------------------------------------------------------- */
+
 @layer base {
   :root {
     --background: 0 0% 100%;
@@ -64,5 +68,53 @@
   }
   body {
     @apply bg-background text-foreground;
+  }
+}
+
+/* -------------------------------------------------------------------------- */
+/*                             Typography Presets                             */
+/* -------------------------------------------------------------------------- */
+
+/* Headings */
+@layer components {
+  .text-preset-h1 {
+    @apply font-commissioner text-[40px] font-extrabold leading-[40px];
+  }
+  .text-preset-h2 {
+    @apply font-commissioner text-[32px] font-extrabold leading-[40px];
+  }
+  .text-preset-h3 {
+    @apply font-commissioner text-[15px] font-extrabold leading-[25px];
+  }
+
+  @screen md {
+    .text-preset-h1 {
+      @apply text-[56px] leading-[56px];
+    }
+  }
+
+  @screen lg {
+    .text-preset-h1 {
+      @apply text-[80px] leading-[88px];
+    }
+    .text-preset-h2 {
+      @apply text-[56px] leading-[64px];
+    }
+    .text-preset-h3 {
+      @apply text-[20px] leading-[32px];
+    }
+  }
+}
+
+/* Body */
+@layer components {
+  .text-preset-body {
+    @apply text-[15px] font-normal leading-[25px];
+  }
+
+  @screen lg {
+    .text-preset-body {
+      @apply text-[18px] leading-[32px];
+    }
   }
 }
