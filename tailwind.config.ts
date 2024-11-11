@@ -28,6 +28,8 @@ export default {
         // design system colors
         'coral-red': 'hsl(var(--color-coral-red))',
         obsidian: 'hsl(var(--color-obsidian))',
+        'coral-blush': 'hsl(var(--color-coral-blush))',
+        'stormy-gray': 'hsl(var(--color-stormy-gray))',
 
         // shadcn-ui colors
         background: 'hsl(var(--background))',
