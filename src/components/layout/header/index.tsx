@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 
+import { MobileMenu } from './mobile-menu';
 import { Navigation } from './navigation';
 
 export function Header() {
@@ -21,6 +22,8 @@ export function Header() {
               priority
             />
           </Link>
+          {/* Mobile Navigation */}
+          <MobileMenu className="w-[252px] md:hidden" />
           {/* Desktop Navigation */}
           <Navigation className="hidden md:block" />
         </div>
