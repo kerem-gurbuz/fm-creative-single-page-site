@@ -38,3 +38,5 @@ export const IMAGE_CONFIG: ImageSourceMap = {
     priority: true,
   },
 };
+
+export const STRATEGY_LINK = '/#strategy-section';
