@@ -5,16 +5,22 @@ import { cn } from '@/lib/utils';
 
 type ResponsiveImageProps = {
   imageSource: ImageSource;
+  className?: string;
   placeholder?: 'blur' | 'empty';
 };
 
 export function ResponsiveImage({
+  className,
   imageSource,
   placeholder = 'blur',
 }: ResponsiveImageProps) {
   return (
     <figure
-      className={cn('relative h-full w-full', imageSource.wrapperClassName)}
+      className={cn(
+        'relative h-full w-full',
+        imageSource.wrapperClassName,
+        className,
+      )}
     >
       <Image
         src={imageSource.src}
