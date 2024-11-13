@@ -8,6 +8,13 @@ import imageSrcDesktop from 'public/assets/images/desktop/image-hero.jpg';
 import imageSrcMobile from 'public/assets/images/mobile/image-hero.jpg';
 import imageSrcTablet from 'public/assets/images/tablet/image-hero.jpg';
 
+import { SECTION_ID as STRATEGY_SECTION_ID } from '@/components/sections/home/strategy-section/constants';
+
+export const SECTION_ID = 'hero-section';
+export const SECTION_HEADING_ID = 'hero-heading';
+
+export const STRATEGY_LINK = '/#' + STRATEGY_SECTION_ID;
+
 const imageAlt =
   'Two people working at computers in a bright office space. One person wearing a grey sweater and glasses is in the foreground, while another person in a dark sweater sits at a desk in the background. Both are focused on their computer screens in what appears to be a modern workspace with natural lighting from windows.';
 
@@ -26,7 +33,7 @@ export const IMAGE_CONFIG: ImageSourceMap = {
     wrapperClassName: 'hidden h-[606px] w-[438px] md:block lg:hidden',
     className: 'object-center',
     sizes: '(min-width: 768px) and (max-width: 1024px) 438px',
-    quality: 85,
+    quality: 100,
   },
   desktop: {
     src: imageSrcDesktop,
@@ -34,9 +41,7 @@ export const IMAGE_CONFIG: ImageSourceMap = {
     wrapperClassName: 'hidden h-[800px] w-[895px] lg:block',
     className: 'object-center',
     sizes: '(min-width: 1024px) 895px',
-    quality: 85,
+    quality: 100,
     priority: true,
   },
 };
-
-export const STRATEGY_LINK = '/#strategy-section';
