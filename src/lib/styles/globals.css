@@ -7,19 +7,24 @@
 /* -------------------------------------------------------------------------- */
 /* 
   # Header
-    - Background-Color Div........................................: -z-10
-    - Content.....................................................: undefined
-    - Mobile Menu.................................................: z-50
+    - Absolute-positioned (#F94F4F background-color) div............: -z-10
+    - Content.......................................................: null
+    - Mobile menu...................................................: z-50
 
   # Hero Section
-    - Mobile Image................................................: undefined
-    - Background Images (Tablet & Desktop)........................: -z-10
-    - Content.....................................................: undefined
+    - Mobile image..................................................: null
+    - Tablet & desktop background images ...........................: -z-10
+    - Content.......................................................: null
 
   # Strategy Section
-    - Section Images..............................................: undefined
-    - Content.....................................................: undefined
-    - Decorative Pattern (Red Wave)...............................: z-10
+    - Section images................................................: null
+    - Content.......................................................: null
+    - Decorative (#F94F4F color) wave pattern svg...................: z-10
+
+  # Approach Section
+    - Absolute-positioned (#F94F4F background-color) div............: z-10
+    - Content.......................................................: z-20
+    - ApproachStepCard number (relative to the card title)..........: -z-10
  */
 
 /* -------------------------------------------------------------------------- */
@@ -30,9 +35,9 @@
 @layer base {
   :root {
     /* primary */
-    --color-coral-red: 0deg 93% 64%;
+    --color-coral-red: 0deg 93% 64%; /* #F94F4F */
     /* secondary */
-    --color-obsidian: 240deg 14% 11%;
+    --color-obsidian: 240deg 14% 11%; /* #191921 */
     /* tertiary */
     --color-coral-blush: 0deg 100% 79%;
     --color-stormy-gray: 240deg 12% 30%;
