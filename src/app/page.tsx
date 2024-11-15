@@ -1,6 +1,7 @@
 import {
   ApproachSection,
   HeroSection,
+  PortfolioSection,
   StrategySection,
 } from '@/components/sections/home';
 
@@ -10,6 +11,7 @@ export default function Home() {
       <HeroSection />
       <StrategySection />
       <ApproachSection />
+      <PortfolioSection />
     </main>
   );
 }
