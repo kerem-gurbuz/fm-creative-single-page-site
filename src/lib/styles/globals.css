@@ -25,6 +25,13 @@
     - Absolute-positioned (#F94F4F background-color) div............: z-10
     - Content.......................................................: z-20
     - ApproachStepCard number (relative to the card title)..........: -z-10
+
+  # Portfolio Section
+    - Carousel......................................................: null
+    - Slide image overlay (relative to the carousel item)...........: z-10
+    - Slide info (relative to the carousel item)....................: z-20
+    - Carousel controls (relative to the carousel)..................: z-10
+    - Decorative (#FFFFFF color) wave pattern svg...................: z-20
  */
 
 /* -------------------------------------------------------------------------- */
