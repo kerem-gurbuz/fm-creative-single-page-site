@@ -1,5 +1,6 @@
 import {
   ApproachSection,
+  CtaSection,
   HeroSection,
   PortfolioSection,
   StrategySection,
@@ -12,6 +13,7 @@ export default function Home() {
       <StrategySection />
       <ApproachSection />
       <PortfolioSection />
+      <CtaSection />
     </main>
   );
 }
