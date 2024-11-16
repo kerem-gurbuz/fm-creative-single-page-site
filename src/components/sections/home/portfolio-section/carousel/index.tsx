@@ -72,11 +72,11 @@ export function Carousel() {
             'px-6 md:pl-[39.5px] md:pr-[70px] lg:pr-[125px]',
           )}
         >
-          <div className="flex justify-center md:justify-end">
-            <div className="max-w-[327px] md:max-w-[281px] lg:max-w-[445px]">
+          <div className="flex justify-center md:justify-start lg:justify-end">
+            <div className="max-w-[327px] md:max-w-[281px] lg:max-w-[405.5px] xl:max-w-[445px]">
               <h2
                 className={cn(
-                  'text-preset-h2 text-center md:text-left',
+                  'text-preset-h2 text-center md:text-left lg:min-h-[133px]',
                   'mb-6 md:mb-8 lg:mb-[51px]',
                 )}
               >
