@@ -19,7 +19,7 @@ export function ApproachSection() {
       {/* Content */}
       <div
         className={cn(
-          'container relative z-20 max-w-[1100px]',
+          'container relative z-20 max-w-[1110px]',
           'px-6 md:px-[39.5px] xl:px-0',
         )}
       >
