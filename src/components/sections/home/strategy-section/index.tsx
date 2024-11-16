@@ -22,9 +22,7 @@ export function StrategySection() {
           <div
             className={cn(
               'flex h-full flex-col items-center md:items-start',
-              'px-[24px] py-[72px]',
-              'md:py-[120px] md:pl-[69.5px] md:pr-[39.5px]',
-              'lg:py-[200px] lg:pl-[154px] lg:pr-[106px]',
+              'px-[24px] py-[72px] md:py-[120px] md:pl-[69.5px] md:pr-[39.5px] lg:py-[200px] lg:pl-[154px] xl:pr-[106px]',
               'bg-obsidian text-center text-white md:text-left',
             )}
           >
