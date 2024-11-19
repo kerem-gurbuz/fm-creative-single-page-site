@@ -66,5 +66,4 @@ export const metadata: Metadata = {
       url: 'https://www.linkedin.com/in/gurbuz-kerem/',
     },
   ],
-  publisher: 'Vercel',
 };
