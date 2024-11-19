@@ -10,7 +10,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="scroll-smooth">
+    <html
+      lang="en"
+      className="scrollbar-thin scrollbar-thumb-coral-red scrollbar-track-obsidian scroll-smooth"
+    >
       <body
         className={`${commissioner.variable} font-commissioner antialiased`}
       >
