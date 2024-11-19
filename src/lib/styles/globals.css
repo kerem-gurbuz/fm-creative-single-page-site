@@ -1,0 +1,174 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* -------------------------------------------------------------------------- */
+/*                                   z-index                                  */
+/* -------------------------------------------------------------------------- */
+
+/* 
+  <--------------------------------- Header --------------------------------->
+  
+    - Absolute-positioned (#F94F4F background-color) div............: -z-10
+    - Content.......................................................: null
+    - Mobile menu...................................................: z-50
+  
+  <-------------------------------- Homepage -------------------------------->
+
+  # Hero Section
+    - Mobile image..................................................: null
+    - Tablet & desktop background images ...........................: -z-10
+    - Content.......................................................: null
+
+  # Strategy Section
+    - Section images................................................: null
+    - Content.......................................................: null
+    - Decorative (#F94F4F color) wave pattern svg...................: z-10
+
+  # Approach Section
+    - Absolute-positioned (#F94F4F background-color) div............: z-10
+    - Content.......................................................: z-20
+    - ApproachStepCard number (relative to the card title)..........: -z-10
+
+  # Portfolio Section
+    - Carousel......................................................: null
+    - Slide image overlay (relative to the carousel item)...........: z-10
+    - Slide info (relative to the carousel item)....................: z-20
+    - Carousel controls (relative to the carousel)..................: z-10
+    - Decorative (#FFFFFF color) wave pattern svg...................: z-20
+
+  # Cta Section
+    - Content.......................................................: null
+    - Decorative (#F94F4F color) wave pattern svg...................: null
+ */
+
+/* -------------------------------------------------------------------------- */
+/*                                   Colors                                   */
+/* -------------------------------------------------------------------------- */
+
+/* Design System Colors */
+@layer base {
+  :root {
+    /* primary */
+    --color-coral-red: 0deg 93% 64%; /* #F94F4F */
+    /* secondary */
+    --color-obsidian: 240deg 14% 11%; /* #191921 */
+    /* tertiary */
+    --color-coral-blush: 0deg 100% 79%;
+    --color-stormy-gray: 240deg 12% 30%;
+  }
+}
+
+/* Shadcn-UI Colors */
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 0 0% 3.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 3.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 3.9%;
+    --primary: 0 0% 9%;
+    --primary-foreground: 0 0% 98%;
+    --secondary: 0 0% 96.1%;
+    --secondary-foreground: 0 0% 9%;
+    --muted: 0 0% 96.1%;
+    --muted-foreground: 0 0% 45.1%;
+    --accent: 0 0% 96.1%;
+    --accent-foreground: 0 0% 9%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 0 0% 89.8%;
+    --input: 0 0% 89.8%;
+    --ring: 0 0% 3.9%;
+    --chart-1: 12 76% 61%;
+    --chart-2: 173 58% 39%;
+    --chart-3: 197 37% 24%;
+    --chart-4: 43 74% 66%;
+    --chart-5: 27 87% 67%;
+    --radius: 0.5rem;
+  }
+  .dark {
+    --background: 0 0% 3.9%;
+    --foreground: 0 0% 98%;
+    --card: 0 0% 3.9%;
+    --card-foreground: 0 0% 98%;
+    --popover: 0 0% 3.9%;
+    --popover-foreground: 0 0% 98%;
+    --primary: 0 0% 98%;
+    --primary-foreground: 0 0% 9%;
+    --secondary: 0 0% 14.9%;
+    --secondary-foreground: 0 0% 98%;
+    --muted: 0 0% 14.9%;
+    --muted-foreground: 0 0% 63.9%;
+    --accent: 0 0% 14.9%;
+    --accent-foreground: 0 0% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 0 0% 14.9%;
+    --input: 0 0% 14.9%;
+    --ring: 0 0% 83.1%;
+    --chart-1: 220 70% 50%;
+    --chart-2: 160 60% 45%;
+    --chart-3: 30 80% 55%;
+    --chart-4: 280 65% 60%;
+    --chart-5: 340 75% 55%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-white text-black;
+  }
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                 Typography                                 */
+/* -------------------------------------------------------------------------- */
+
+/* Headings */
+@layer components {
+  .text-preset-h1 {
+    @apply font-commissioner text-[40px] font-extrabold leading-[40px];
+  }
+  .text-preset-h2 {
+    @apply font-commissioner text-[32px] font-extrabold leading-[40px];
+  }
+  .text-preset-h3 {
+    @apply font-commissioner text-[15px] font-extrabold leading-[25px];
+  }
+
+  @screen md {
+    .text-preset-h1 {
+      @apply text-[56px] leading-[56px];
+    }
+  }
+
+  @screen lg {
+    .text-preset-h1 {
+      @apply text-[80px] leading-[88px];
+    }
+    .text-preset-h2 {
+      @apply text-[56px] leading-[64px];
+    }
+    .text-preset-h3 {
+      @apply text-[20px] leading-[32px];
+    }
+  }
+}
+
+/* Body */
+@layer components {
+  .text-preset-body {
+    @apply font-commissioner text-[15px] font-normal leading-[25px];
+  }
+
+  @screen lg {
+    .text-preset-body {
+      @apply text-[18px] leading-[32px];
+    }
+  }
+}
